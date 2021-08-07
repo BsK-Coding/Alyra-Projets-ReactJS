@@ -1,0 +1,15 @@
+{
+  "name": "json-server-api",
+  "version": "1.0.0",
+  "description": "Simple Fake API",
+  "main": "main.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "ME:)",
+  "license": "ISC",
+  "dependencies": {
+    "json-server": "^0.16.3",
+    "jsonwebtoken": "^8.1.0"
+  }
+}

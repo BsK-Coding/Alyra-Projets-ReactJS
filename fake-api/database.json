@@ -1,0 +1,34 @@
+{
+  "todos": [
+    {
+      "id": 1,
+      "text": "Create React App",
+      "isCompleted": true
+    },
+    {
+      "id": 2,
+      "text": "Lister des tâcher",
+      "isCompleted": false
+    },
+    {
+      "id": 3,
+      "text": "Ajouter une nouvelle tâches",
+      "isCompleted": false
+    },
+    {
+      "id": 4,
+      "text": "Supprimer une tâche",
+      "isCompleted": false
+    },
+    {
+      "id": 5,
+      "text": "Terminer/Rétablir",
+      "isCompleted": false
+    },
+    {
+      "id": 6,
+      "text": "New tâche",
+      "isCompleted": false
+    }
+  ]
+}

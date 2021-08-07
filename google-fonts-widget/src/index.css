@@ -1,0 +1,19 @@
+body {
+  /* "font-display: swap;" Utilisé pour charger la police du systeme d'exploitation par defaut lors de chargement long */
+  font-display: swap;       
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.bg-black {
+  background-color: #000000;
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>Hello!</h1>
+  <p>
+    The JSON Server is running
+    <br />
+    ✧*｡٩(ˊᗜˋ*)و✧*｡
+  </p>
+
+  <p>You need to authenticate at <code>POST /auth/login</code> to get <code>access_token</code></p>
+
+  <pre>
+    <code>
+    fetch("http://localhost:4000/auth/login", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        login,
+        password,
+      }),
+    })
+    </code>
+    </pre>
+  <p>
+    Here'are some examples what you might want to do :
+  </p>
+
+  <ul>
+    <li>list all todos: <code>GET /todos</code></li>
+    <li>add a todo <code>POST /todos</code></li>
+    <li>update a todo <code>PUT /todos/1 </code></li>
+    <li>delete a todo <code>DELETE /todos/1</code></li>
+  </ul>
+
+  <pre>
+<code>
+fetch("http://localhost:4000/todos", {
+  headers: {
+    Authorization: "Bearer " + user.access_token,
+  }
+})
+</code>
+</pre>
+
+  <pre>
+<code>
+fetch("http://localhost:4000/todos", {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json",
+    Authorization: "Bearer " + user.access_token,
+  },
+  body: JSON.stringify({
+    text: "Add a new todo",
+    isCompleted: false
+  })
+})
+</code>
+</pre>
+
+  <pre>
+<code>
+fetch("http://localhost:4000/todos/5", {
+  method: "PUT",
+  headers: {
+    "Content-Type": "application/json",
+    Authorization: "Bearer " + user.access_token,
+  },
+  body: JSON.stringify({
+    text: "Add new todo via API",
+    isCompleted: true,
+  }),
+})
+</code>
+</pre>
+  <pre>
+<code>
+fetch("http://localhost:4000/todos/5", {
+  method: "DELETE",
+  headers: {
+    "Content-Type": "application/json",
+    Authorization: "Bearer " + user.access_token,
+  },
+})
+</code>
+</pre>
+</body>
+
+</html>
