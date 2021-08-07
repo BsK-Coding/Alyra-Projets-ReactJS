@@ -1,0 +1,20 @@
+:root{
+  --titre:'Geostar Fill', cursive;
+  --text:'Coustard', serif;
+}
+
+body{
+  background-image: url('./stars.jpg');
+  background-attachment: fixed;
+  font-family: var(--text);
+}
+
+h1{
+font-family: var(--titre);
+color: rgb(216, 213, 39);
+}
+
+.infos{
+  color:white;
+}
+
